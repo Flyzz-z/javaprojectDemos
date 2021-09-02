@@ -38,7 +38,7 @@ public class CustomUserDetailsServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException("user is not exit");
         } else {
             List<GrantedAuthority> list = new ArrayList<>();
-            list.add(new SimpleGrantedAuthority("admin"));
+            list.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
             return new User(userDo.getUserName(),userDo.getPassword(),list);
         }
     }
