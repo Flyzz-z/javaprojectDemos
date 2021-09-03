@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-security</module>
+        <module>security-token-redis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
