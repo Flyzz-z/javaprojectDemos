@@ -16,7 +16,6 @@ public final class JwtUtils {
 
     private final static String SECRET_KEY = "flyzzfighting";
 
-    private final static Duration EXPIRATION = Duration.ofHours(1);
 
     public static String generate(Map<String,Object> map,Duration duration) {
         Date expiryDate = new Date(System.currentTimeMillis()+duration.toMillis());
