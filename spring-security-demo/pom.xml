@@ -6,6 +6,7 @@
     <modules>
         <module>spring-security</module>
         <module>security-token-redis</module>
+        <module>spring-security-jwt</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -57,11 +58,7 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.3</version>
-        </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>

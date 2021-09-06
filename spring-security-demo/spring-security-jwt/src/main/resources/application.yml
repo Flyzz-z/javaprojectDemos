@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-security-jwt
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security_test?characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 20010121
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: true
+
+mybatis-plus:
+  mapper-locations: classpath*:/xyz/flyzz/securityjwt/mapper/*.xml
